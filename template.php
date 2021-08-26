@@ -138,26 +138,13 @@ class template
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class='nav-item'>
-                <a class='nav-link collapsed' href='#' data-toggle='collapse' data-target='#collapsePages'
-                    aria-expanded='true' aria-controls='collapsePages'>
-                    <i class='fas fa-fw fa-folder'></i>
-                    <span>Pages</span>
-                </a>                
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class='nav-item'>
-                <a class='nav-link' href='charts.html'>
-                    <i class='fas fa-fw fa-chart-area'></i>
-                    <span>Charts</span></a>
-            </li>
+            
 
             <!-- Nav Item - Tables -->
             <li class='nav-item'>
                 <a class='nav-link' href='crtUsuarios.php?pag=lista_usuarios'>
                     <i class='fas fa-fw fa-table'></i>
-                    <span>Tabla </span></a>
+                    <span>Principal </span></a>
             </li>
 
             <!-- Divider -->
@@ -202,30 +189,7 @@ class template
                             <!-- Dropdown - Messages -->                            
                         </li>
                         <!-- Nav Item - Alerts -->
-                        <li class='nav-item dropdown no-arrow mx-1'>
-                            <a class='nav-link dropdown-toggle' href='#' id='alertsDropdown' role='button'
-                                data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                                <i class='fas fa-bell fa-fw'></i>
-                                <!-- Counter - Alerts -->
-                                <span class='badge badge-danger badge-counter'>3+</span>
-                            </a>
-                            <!-- Dropdown - Alerts -->                            
-                        </li>
-
-                        <!-- Nav Item - Messages -->
-                        <li class='nav-item dropdown no-arrow mx-1'>
-                            <a class='nav-link dropdown-toggle' href='#' id='messagesDropdown' role='button'
-                                data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                                <i class='fas fa-envelope fa-fw'></i>
-                                <!-- Counter - Messages -->
-                                <span class='badge badge-danger badge-counter'>7</span>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class='dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in'
-                                aria-labelledby='messagesDropdown'>
-                                
-                            </div>
-                        </li>
+                        
 
                         <div class='topbar-divider d-none d-sm-block'></div>
 
@@ -260,7 +224,7 @@ class template
     <meta name='description' content=''>
     <meta name='author' content=''>
 
-    <title>Anonymus</title>
+    <title>Anonimus</title>
 
     <!-- Custom fonts for this template-->
     <link href='fontawesome-free/css/all.min.css' rel='stylesheet' type='text/css'>
@@ -368,11 +332,32 @@ class template
 
             <hr class='sidebar-divider'>
 
-            <!-- Se llama al controlador que mostrara las estidisticas de habilidad de cada estudiante -->
+            <!-- Heading -->
+            <div class='sidebar-heading'>
+                Reporte
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class='nav-item'>
+                <a class='nav-link collapsed' href='#' data-toggle='collapse' data-target='#collapsePages'
+                    aria-expanded='true' aria-controls='collapsePages'>
+                    <i class='fas fa-fw fa-folder'></i>
+                    <span>Pages</span>
+                </a>                
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class='nav-item'>
+                <a class='nav-link' href='charts.html'>
+                    <i class='fas fa-fw fa-chart-area'></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
             <li class='nav-item'>
                 <a class='nav-link' href='crtUsuarios.php?pag=lista_usuarios'>
                     <i class='fas fa-fw fa-table'></i>
-                    <span>Estadisticas Estudiantes</span></a>
+                    <span>Tabla</span></a>
             </li>
 
             <!-- Divider -->
@@ -385,7 +370,40 @@ class template
 
             <!-- Main Content AQUI ES LA BARRA DERECHA-->
  
+<nav class='navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow'>
 
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id='sidebarToggleTop' class='btn btn-link d-md-none rounded-circle mr-3'>
+                        <i class='fa fa-bars'></i>
+                    </button>
+
+                    
+                    <!-- Topbar Navbar -->
+                    <ul class='navbar-nav ml-auto'>
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class='nav-item dropdown no-arrow d-sm-none'>
+                            <a class='nav-link dropdown-toggle' href='#' id='searchDropdown' role='button'
+                                data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                                <i class='fas fa-search fa-fw'></i>
+                            </a>
+                            <!-- Dropdown - Messages -->                            
+                        </li>
+                        <!-- Nav Item - Alerts -->
+                        
+
+                        <div class='topbar-divider d-none d-sm-block'></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class='nav-item dropdown no-arrow'>
+                            <a class='nav-link dropdown-toggle' href='logout.php' id='userDropdown' role='button'
+                                data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                                <span class='mr-2 d-none d-lg-inline text-gray-600 small'>$nombre</span>                                
+                            </a>                            
+                        </li>
+
+                    </ul>
+
+                </nav>
         ";
         echo $html;
   }
