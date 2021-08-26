@@ -16,7 +16,7 @@ if(!empty($_POST))
      VALUES('$CI', '$NOMBRE', '$PATERNO', '$MATERNO', '$CELULAR', '$NACIMIENTO', '$EMAIL', '$CIUDAD','3')";
     if(mysqli_query($connect, $query))
     {
-     $output.= '<label class="text-success">Registro Insertado Correctamente</label>';
+     $output.= '<label class="text-success">Registro Correctamente</label>';
     }
     else
       {

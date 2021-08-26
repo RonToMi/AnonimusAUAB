@@ -110,8 +110,10 @@
    <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal">&times;</button>
     <h4 class="modal-title">Registrar Nuevo</h4>
+
     <div id="employee_table">
-</div>
+    </div>
+
    </div>
    <div class="modal-body">
     <form method="post" id="insert_form">
