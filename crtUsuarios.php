@@ -8,7 +8,7 @@ function helper()
 {
 	$pag=helper_get_pagina();
 	$template=new template();
-	
+//templates para cada rol de usuarios del sistema	
 	switch($_SESSION['id_rol'])
 	{
 		case 1:
@@ -108,7 +108,7 @@ function helper()
 				break;
 			} 
 		break;
-
+//Controlador que recibe parametros de entrada del usuario estudiante que se logueo al sistema, para llenar el cuestionario de creactividad
 		case 'form_cuestionario_creat_usuario':
 		    $usuario=new Usuarios();
 		    $id=$_GET['id'];
@@ -138,7 +138,7 @@ function helper()
 		//echo ($liderazgo);
 		//echo ($programacion);
 		break;
-
+//Controlador que recibe parametros de entrada del usuario estudiante que se logueo al sistema, para llenar el cuestionario de liderazgo
 		case 'form_cuestionario_lide_usuario':
 		    $usuario=new Usuarios();
 		    $id=$_GET['id'];
@@ -165,7 +165,7 @@ function helper()
 		    $usuario->update();
 		    $usuario->get_tabla3();
 		break;
-
+//Controlador que recibe parametros de entrada del usuario estudiante que se logueo al sistema, para llenar el cuestionario de programacion
 		case 'form_cuestionario_progra_usuario':
 		    $usuario=new Usuarios();
 		    $id=$_GET['id'];
